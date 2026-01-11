@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="clock-section">
+            <div class="clock-label">Current Time</div>
+            <div class="clock" id="clock">00:00:00</div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <div class="timer-section">
+            <div class="timer-label">Timer</div>
+            <div class="timer-display" id="timerDisplay">00:00</div>
+            
+            <div class="timer-inputs">
+                <div class="input-group">
+                    <input type="number" id="minutes" min="0" max="99" value="0">
+                    <div class="input-label">Minutes</div>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="seconds" min="0" max="59" value="0">
+                    <div class="input-label">Seconds</div>
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button class="start-btn" id="startBtn">Start</button>
+                <button class="reset-btn" id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
