@@ -1,9 +1,8 @@
 # Digital-clock-and-timer
-The Digital Clock and Timer is a web-based application developed using HTML, CSS, and JavaScript. It displays the current system time in real time and provides a customizable countdown timer with start, pause, resume, and reset functionality. Audio and visual notifications enhance user interaction.
-Features 
-● Real-time digital clock
-● Countdown timer with minute and second input
-● Start, pause, resume, and reset controls
-● Audio and visual alerts on timer completion
-● Responsive and user-friendly interface
+Smart Clock & Time Utility is a modern web app built using HTML, CSS, and JavaScript.
+It includes a digital clock with date and greeting, a timer, an alarm with notes, and a world clock.
+The app features sound alerts, vibration animations, and a dark mode using CSS variables.
+All time updates run in real time using JavaScript’s Date and setInterval APIs.
+The interface is fully responsive and requires no external libraries.
+Open index.html in a browser and interact once to enable sound.
 Author Aaish Veerwani 
