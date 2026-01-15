@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clock App ⏰</title>
+<link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-bar">
+        <span>⏰ Clock App</span>
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <div class="nav">
+        <button onclick="showPage('clockPage')">🕒</button>
+        <button onclick="showPage('timerPage')">⏳</button>
+        <button onclick="showPage('alarmPage')">⏰</button>
+        <button onclick="showPage('worldPage')">🌍</button>
+    </div>
+
+    <!-- CLOCK -->
+    <div class="page active" id="clockPage">
+        <h2 id="greeting"></h2>
+        <div class="clock" id="clock"></div>
+        <div class="date" id="date"></div>
+    </div>
+
+    <!-- TIMER -->
+    <div class="page" id="timerPage">
+        <h2>⏳ Timer</h2>
+        <div class="timer-display" id="timerDisplay">00:00</div>
+
+        <input type="number" id="minutes" placeholder="Minutes" min="0">
+        <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+
+        <div class="buttons">
+            <button id="startBtn">▶️ Start</button>
+            <button id="pauseBtn">⏸️ Pause</button>
+            <button id="resetBtn">🔄 Reset</button>
+        </div>
+    </div>
+
+    <!-- ALARM -->
+    <div class="page" id="alarmPage">
+        <h2>⏰ Alarm</h2>
+
+        <input type="time" id="alarmTime">
+        <input type="text" id="alarmNote" placeholder="📝 Alarm note">
+
+        <div class="buttons">
+            <button id="setAlarmBtn">✅ Set Alarm</button>
+            <button id="alarmToggleBtn">🔔 OFF</button>
+        </div>
+
+        <p id="alarmStatus">No alarm set</p>
+    </div>
+
+    <!-- WORLD -->
+    <div class="page" id="worldPage">
+        <h2>🌍 World Clock</h2>
+        <select id="countrySelect">
+            <option value="Asia/Kolkata">🇮🇳 India</option>
+            <option value="America/New_York">🇺🇸 USA</option>
+            <option value="Europe/London">🇬🇧 UK</option>
+            <option value="Asia/Tokyo">🇯🇵 Japan</option>
+            <option value="Australia/Sydney">🇦🇺 Australia</option>
+        </select>
+        <div class="world-time" id="worldTime"></div>
+    </div>
+
+</div>
+
+<script src="final.java"></script>
+</body>
+</html>

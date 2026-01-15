@@ -1,0 +1,68 @@
+:root {
+    --bg: linear-gradient(135deg, #1d2671, #c33764);
+    --card: #ffffff;
+    --text: #222;
+    --btn: #c33764;
+}
+
+body.dark {
+    --bg: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    --card: #1e1e1e;
+    --text: #f1f1f1;
+    --btn: #00c6ff;
+}
+
+body {
+    background: var(--bg);
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 380px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 25px;
+    color: var(--text);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.nav button, .buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: var(--btn);
+    color: white;
+    cursor: pointer;
+}
+
+.page { display: none; text-align: center; }
+.page.active { display: block; }
+
+.clock { font-size: 48px; }
+.timer-display, .world-time { font-size: 40px; margin: 10px; }
+
+input, select {
+    width: 90%;
+    padding: 12px;
+    margin: 6px;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+}
